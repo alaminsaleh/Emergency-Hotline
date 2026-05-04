@@ -1,502 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emergancy Hot Line Help Center</title>
-    <!-- tailwind and daisyui link  -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css file link  -->
-    <link rel="stylesheet" href="/style/style.css" />
-  </head>
-  <body class="hind-madurai-regular">
-    <!-- nabvar is starting from here  -->
-    <nav
-      class="flex flex-col sm:flex-row justify-between items-center pt-[24px] pr-[60px] pb-[24px] pl-[60px] space-y-4 sm:space-y-0"
-    >
-      <!-- Left: Logo + Title -->
-      <div
-        class="flex flex-col sm:flex-row items-center sm:space-x-4 text-center sm:text-left"
-      >
-        <div>
-          <img class="w-[60px] h-[60px]" src="./assets/logo.png" alt="" />
-        </div>
-        <div>
-          <h1 class="font-bold text-[20px]">
-            Emergancy
-            <br class="hidden lg:block" />
-            Service
-          </h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergancy Hot Line Help Center</title>
+  <!-- tailwind and daisyui link  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- css file link  -->
+  <link rel="stylesheet" href="/style/style.css" />
+</head>
+
+<body class="hind-madurai-regular">
+  <!-- nabvar is starting from here  -->
+  <nav
+    class="flex flex-col sm:flex-row justify-between items-center pt-[24px] pr-[60px] pb-[24px] pl-[60px] space-y-4 sm:space-y-0">
+    <!-- Left: Logo + Title -->
+    <div class="flex flex-col sm:flex-row items-center sm:space-x-4 text-center sm:text-left">
+      <div>
+        <img class="w-[60px] h-[60px]" src="./assets/logo.png" alt="" />
       </div>
-
-      <!-- Right: Elements -->
-      <div
-        class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8"
-      >
-        <!-- Heart -->
-        <div
-          class="w-[100px] flex items-center justify-center space-x-4 p-3 bg-[#41ff6b1a] rounded-xl"
-        >
-          <span id="heartCounter">0</span>
-          <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
-        </div>
-
-        <!-- Coin -->
-        <div
-          class="w-[100px] flex items-center justify-center space-x-4 p-3 bg-[#41ff6b1a] rounded-xl"
-        >
-          <span id="coin-holder">100</span>
-          <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="" />
-        </div>
-
-        <!-- Copy -->
-        <h1
-          class="bg-[#00a63e] text-center w-[100px] text-white p-3 rounded-xl"
-        >
-          <span id="copy-counter">0</span> copy
+      <div>
+        <h1 class="font-bold text-[20px]">
+          Emergancy
+          <br class="hidden lg:block" />
+          Service
         </h1>
       </div>
-    </nav>
+    </div>
 
-    <main>
-      <section
-        class="flex items-center justify-center text-center p-4 bg-[linear-gradient(90deg,rgba(1,49,34,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]"
-      >
-        <div class="text-white max-w-2xl">
-          <img
-            class="w-[100px] h-[100px] mx-auto mb-4"
-            src="./assets/logo.png"
-            alt=""
-          />
-          <h1 class="font-bold text-[40px] mb-4">
-            Emergency Service Bangladesh
-          </h1>
-          <p class="text-[20px] leading-relaxed">
-            Government Emergency Services at Your Fingertip – A Project by
-            Government of the People’s Republic of Bangladesh
-          </p>
-        </div>
-      </section>
+    <!-- Right: Elements -->
+    <div class="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8">
+      <!-- Heart -->
+      <div class="w-[100px] flex items-center justify-center space-x-4 p-3 bg-[#41ff6b1a] rounded-xl">
+        <span id="heartCounter">0</span>
+        <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
+      </div>
 
-      <!-- grid section  is start from here  -->
+      <!-- Coin -->
+      <div class="w-[100px] flex items-center justify-center space-x-4 p-3 bg-[#41ff6b1a] rounded-xl">
+        <span id="coin-holder">100</span>
+        <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="" />
+      </div>
 
-      <section class="grid grid-cols-1 lg:grid-cols-4 gap-6 p-6 bg-[#f3faf5]">
-        <!-- Left side (cards) -->
-        <div
-          class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          <!-- Card -->
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img class="w-8 h-8 mb-2" src="./assets/emergency.png" alt="" />
-                <h2 class="font-bold text-lg title">
-                  National Emergency Number
-                </h2>
-                <p class="text-sm text-gray-500">National Emergency</p>
-                <h1 class="text-2xl font-bold mt-2 code">999</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
-              </div>
-              <div>
-                <button class="heart mt-1 cursor-pointer">
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-              </div>
+      <!-- Copy -->
+      <h1 class="bg-[#00a63e] text-center w-[100px] text-white p-3 rounded-xl">
+        <span id="copy-counter">0</span> copy
+      </h1>
+    </div>
+  </nav>
+
+  <main>
+    <section
+      class="flex items-center justify-center text-center p-4 bg-[linear-gradient(90deg,rgba(1,49,34,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)]">
+      <div class="text-white max-w-2xl">
+        <img class="w-[100px] h-[100px] mx-auto mb-4" src="./assets/logo.png" alt="" />
+        <h1 class="font-bold text-[40px] mb-4">
+          Emergency Service Bangladesh
+        </h1>
+        <p class="text-[20px] leading-relaxed">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </section>
+
+    <!-- grid section  is start from here  -->
+
+    <section class="grid grid-cols-1 lg:grid-cols-4 gap-6 p-6 bg-[#f3faf5]">
+      <!-- Left side (cards) -->
+      <div class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card -->
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/emergency.png" alt="" />
+              <h2 class="font-bold text-lg title">
+                National Emergency Number
+              </h2>
+              <p class="text-sm text-gray-500">National Emergency</p>
+              <h1 class="text-2xl font-bold mt-2 code">999</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">All</span>
             </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn cursor-pointer"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img class="w-8 h-8 mb-2" src="./assets/police.png" alt="" />
-                <h2 class="font-bold text-lg title">Police Helpline Number</h2>
-                <p class="text-sm text-gray-500">Police Service</p>
-                <h1 class="text-2xl font-bold mt-2 code">999</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded"
-                  >Police</span
-                >
-              </div>
+            <div>
               <button class="heart mt-1 cursor-pointer">
                 <i class="fa-regular fa-heart"></i>
               </button>
             </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
           </div>
 
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img
-                  class="w-8 h-8 mb-2"
-                  src="./assets/fire-service.png"
-                  alt=""
-                />
-                <h2 class="font-bold text-lg title">National Fire Service</h2>
-                <p class="text-sm text-gray-500">Fire Service</p>
-                <h1 class="text-2xl font-bold mt-2 code">999</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Fire</span>
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer">
+              📋 Copy
+            </button>
+            <button class="bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn cursor-pointer">
+              📞 Call
+            </button>
           </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img class="w-8 h-8 mb-2" src="./assets/ambulance.png" alt="" />
-                <h2 class="font-bold text-lg title">
-                  Ambulence Service Bangladesh
-                </h2>
-                <p class="text-sm text-gray-500">Emergency Ambulence Service</p>
-                <h1 class="text-2xl font-bold mt-2 code">8888</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded"
-                  >Ambulence</span
-                >
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img class="w-8 h-8 mb-2" src="./assets/emergency.png" alt="" />
-                <h2 class="font-bold text-lg title">Women And Chilhelpline</h2>
-                <p class="text-sm text-gray-500">
-                  National Women And child Secure
-                </p>
-                <h1 class="text-2xl font-bold mt-2 code">0099</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded"
-                  >Women Help</span
-                >
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img
-                  class="w-8 h-8 mb-2"
-                  src="./assets/fire-service.png"
-                  alt=""
-                />
-                <h2 class="font-bold text-lg title">
-                  Anti Corruption Helpline
-                </h2>
-                <p class="text-sm text-gray-500">National Corruption Help</p>
-                <h1 class="text-2xl font-bold mt-2 code">1060</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded"
-                  >Corruption</span
-                >
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img class="w-8 h-8 mb-2" src="./assets/emergency.png" alt="" />
-                <h2 class="font-bold text-lg title">Electricity Help</h2>
-                <p class="text-sm text-gray-500">National Electricity</p>
-                <h1 class="text-2xl font-bold mt-2 code">8899</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded"
-                  >Electricity</span
-                >
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="cursor-pointer copy-btn border px-4 py-2 rounded-lg text-sm"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img class="w-8 h-8 mb-2" src="./assets/brac.png" alt="" />
-                <h2 class="font-bold text-lg title">Brack Helpline</h2>
-                <p class="text-sm text-gray-500">Ngo Brack World</p>
-                <h1 class="text-2xl font-bold mt-2 code">2323</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded">Brack</span>
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="cursor-pointer copy-btn border px-4 py-2 rounded-lg text-sm"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <div
-            class="bg-white shadow rounded-xl p-4 flex flex-col justify-between"
-          >
-            <div class="flex items-start justify-between">
-              <div>
-                <img
-                  class="w-8 h-8 mb-2"
-                  src="./assets/Bangladesh-Railway.png"
-                  alt=""
-                />
-                <h2 class="font-bold text-lg title">
-                  National Railway Helpline
-                </h2>
-                <p class="text-sm text-gray-500">National Railway Help</p>
-                <h1 class="text-2xl font-bold mt-2 code">4040</h1>
-                <span class="text-xs bg-gray-100 px-2 py-1 rounded"
-                  >Railway</span
-                >
-              </div>
-              <button class="heart mt-1 cursor-pointer">
-                <i class="fa-regular fa-heart"></i>
-              </button>
-            </div>
-
-            <!-- Actions -->
-            <div class="flex justify-between mt-4">
-              <button
-                class="cursor-pointer copy-btn border px-4 py-2 rounded-lg text-sm"
-              >
-                📋 Copy
-              </button>
-              <button
-                class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn"
-              >
-                📞 Call
-              </button>
-            </div>
-          </div>
-
-          <!-- Repeat for other cards ... -->
         </div>
 
-        <!-- Right side (call history) -->
-        <div class="bg-white shadow rounded-xl p-4 flex flex-col">
-          <div class="flex justify-between items-center mb-4">
-            <h2 class="font-bold">
-              <i class="fa-solid fa-clock-rotate-left"></i> Call History
-            </h2>
-            <button
-              id="all-clear"
-              class="bg-green-600 text-white px-3 py-1 rounded-lg text-sm"
-            >
-              Clear
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/police.png" alt="" />
+              <h2 class="font-bold text-lg title">Police Helpline Number</h2>
+              <p class="text-sm text-gray-500">Police Service</p>
+              <h1 class="text-2xl font-bold mt-2 code">999</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Police</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
             </button>
           </div>
 
-          <div class="space-y-3 overflow-y-auto max-h-[500px]">
-            <!-- Single history item -->
-
-            <!-- Repeat dynamically -->
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer">
+              📋 Copy
+            </button>
+            <button class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer
-      class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 text-white py-10 px-6"
-    >
-      <div class="max-w-6xl mx-auto flex flex-col items-center space-y-8">
-        <!-- Navigation links -->
-        <nav class="flex flex-wrap justify-center gap-6 text-sm font-medium">
-          <a
-            href="https://github.com/ahnoorwd "
-            target="_blank"
-            class="hover:text-emerald-300 transition"
-            >About Me</a
-          >
-          <a
-            href="https://www.linkedin.com/in/abdul-hannan-noor-5955a9315/"
-            target="_blank"
-            class="hover:text-emerald-300 transition"
-            >Contact</a
-          >
-          <a href="#" class="hover:text-emerald-300 transition">Jobs</a>
-          <a href="#" class="hover:text-emerald-300 transition">Press kit</a>
-        </nav>
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/fire-service.png" alt="" />
+              <h2 class="font-bold text-lg title">National Fire Service</h2>
+              <p class="text-sm text-gray-500">Fire Service</p>
+              <h1 class="text-2xl font-bold mt-2 code">999</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Fire</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
 
-        <!-- Social icons -->
-        <nav class="flex space-x-6">
-          <a
-            href="#"
-            class="hover:text-emerald-300 transition transform hover:scale-110"
-          >
-            <!-- Twitter -->
-           <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a
-            href="#"
-            class="hover:text-emerald-300 transition transform hover:scale-110"
-          >
-            <!-- YouTube -->
-            <i class="fa-brands fa-youtube"></i>
-          </a>
-          <a
-            href="#"
-            class="hover:text-emerald-300 transition transform hover:scale-110"
-          >
-            <!-- Facebook -->
-           <i class="fa-brands fa-facebook"></i>
-          </a>
-        </nav>
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer">
+              📋 Copy
+            </button>
+            <button class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
 
-        <!-- Copyright -->
-        <aside class="text-sm text-gray-300">
-          <p>
-            © <span id="year"></span> All rights reserved by
-            <span class="font-semibold text-white">Innovative Horizon MU</span>
-          </p>
-        </aside>
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/ambulance.png" alt="" />
+              <h2 class="font-bold text-lg title">
+                Ambulence Service Bangladesh
+              </h2>
+              <p class="text-sm text-gray-500">Emergency Ambulence Service</p>
+              <h1 class="text-2xl font-bold mt-2 code">8888</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Ambulence</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer">
+              📋 Copy
+            </button>
+            <button class="cursor-pointer bg-green-600 text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/emergency.png" alt="" />
+              <h2 class="font-bold text-lg title">Women And Chilhelpline</h2>
+              <p class="text-sm text-gray-500">
+                National Women And child Secure
+              </p>
+              <h1 class="text-2xl font-bold mt-2 code">0099</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Women Help</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer">
+              📋 Copy
+            </button>
+            <button class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/fire-service.png" alt="" />
+              <h2 class="font-bold text-lg title">
+                Anti Corruption Helpline
+              </h2>
+              <p class="text-sm text-gray-500">National Corruption Help</p>
+              <h1 class="text-2xl font-bold mt-2 code">1060</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Corruption</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="copy-btn border px-4 py-2 rounded-lg text-sm cursor-pointer">
+              📋 Copy
+            </button>
+            <button class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/emergency.png" alt="" />
+              <h2 class="font-bold text-lg title">Electricity Help</h2>
+              <p class="text-sm text-gray-500">National Electricity</p>
+              <h1 class="text-2xl font-bold mt-2 code">8899</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Electricity</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="cursor-pointer copy-btn border px-4 py-2 rounded-lg text-sm">
+              📋 Copy
+            </button>
+            <button class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/brac.png" alt="" />
+              <h2 class="font-bold text-lg title">Brack Helpline</h2>
+              <p class="text-sm text-gray-500">Ngo Brack World</p>
+              <h1 class="text-2xl font-bold mt-2 code">2323</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Brack</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="cursor-pointer copy-btn border px-4 py-2 rounded-lg text-sm">
+              📋 Copy
+            </button>
+            <button class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow rounded-xl p-4 flex flex-col justify-between">
+          <div class="flex items-start justify-between">
+            <div>
+              <img class="w-8 h-8 mb-2" src="./assets/Bangladesh-Railway.png" alt="" />
+              <h2 class="font-bold text-lg title">
+                National Railway Helpline
+              </h2>
+              <p class="text-sm text-gray-500">National Railway Help</p>
+              <h1 class="text-2xl font-bold mt-2 code">4040</h1>
+              <span class="text-xs bg-gray-100 px-2 py-1 rounded">Railway</span>
+            </div>
+            <button class="heart mt-1 cursor-pointer">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex justify-between mt-4">
+            <button class="cursor-pointer copy-btn border px-4 py-2 rounded-lg text-sm">
+              📋 Copy
+            </button>
+            <button class="bg-green-600 cursor-pointer text-white px-4 py-2 rounded-lg text-sm call-btn">
+              📞 Call
+            </button>
+          </div>
+        </div>
+
+        <!-- Repeat for other cards ... -->
       </div>
-    </footer>
 
-    <script src="./js/myscript.js"></script>
-  </body>
+      <!-- Right side (call history) -->
+      <div class="bg-white shadow rounded-xl p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="font-bold">
+            <i class="fa-solid fa-clock-rotate-left"></i> Call History
+          </h2>
+          <button id="all-clear" class="bg-green-600 text-white px-3 py-1 rounded-lg text-sm">
+            Clear
+          </button>
+        </div>
+
+        <div class="space-y-3 overflow-y-auto max-h-[500px]">
+          <!-- Single history item -->
+
+          <!-- Repeat dynamically -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 text-white py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col items-center space-y-8">
+      <!-- Navigation links -->
+      <nav class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+        <a href="https://github.com/ahnoorwd " target="_blank" class="hover:text-emerald-300 transition">About Me</a>
+        <a href="https://www.linkedin.com/in/abdul-hannan-noor-5955a9315/" target="_blank"
+          class="hover:text-emerald-300 transition">Contact</a>
+        <a href="#" class="hover:text-emerald-300 transition">Jobs</a>
+        <a href="#" class="hover:text-emerald-300 transition">Press kit</a>
+      </nav>
+
+      <!-- Social icons -->
+      <nav class="flex space-x-6">
+        <a href="#" class="hover:text-emerald-300 transition transform hover:scale-110">
+          <!-- Twitter -->
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="hover:text-emerald-300 transition transform hover:scale-110">
+          <!-- YouTube -->
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#" class="hover:text-emerald-300 transition transform hover:scale-110">
+          <!-- Facebook -->
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </nav>
+
+      <!-- Copyright -->
+      <aside class="text-sm text-gray-300">
+        <p>
+          © <span id="year"></span> All rights reserved by
+          <span class="font-semibold text-white">Innovative Horizon MU</span>
+        </p>
+      </aside>
+    </div>
+  </footer>
+
+  <script src="./js/myscript.js"></script>
+</body>
+
 </html>
